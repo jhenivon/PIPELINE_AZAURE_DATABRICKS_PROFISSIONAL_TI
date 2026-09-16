@@ -1,6 +1,6 @@
 # 𝗣𝗶𝗽𝗲𝗹𝗶𝗻𝗲 𝗱𝗲 𝗗𝗮𝗱𝗼𝘀 𝗰𝗼𝗺 𝗔𝘇𝘂𝗿𝗲 𝗗𝗮𝘁𝗮𝗯𝗿𝗶𝗰𝗸𝘀 - 𝗣𝗿𝗼𝗳𝗶𝘀𝘀𝗶𝗼𝗻𝗮𝗶𝘀 𝗧𝗜
 
-## 1. 📌 📌 Problema
+## 1. 📌 Problema
 
 Os dados brutos de salários de profissionais de TI apresentam informações em diferentes formatos e códigos, dificultando o consumo analítico e a interpretação dos dados. Era necessário padronizar essas informações para disponibilizá-las de forma adequada à análise e responder perguntas de negócio.
 Entre os tratamentos realizados estão a padronização dos nomes das colunas para o contexto de negócio e a transformação de categorias codificadas, como **EN → Júnior, MI → Pleno, SE → Sênior e EX → Executivo.**

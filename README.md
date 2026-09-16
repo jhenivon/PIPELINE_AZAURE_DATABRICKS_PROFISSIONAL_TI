@@ -1,16 +1,16 @@
 # 𝗣𝗶𝗽𝗲𝗹𝗶𝗻𝗲 𝗱𝗲 𝗗𝗮𝗱𝗼𝘀 𝗰𝗼𝗺 𝗔𝘇𝘂𝗿𝗲 𝗗𝗮𝘁𝗮𝗯𝗿𝗶𝗰𝗸𝘀 - 𝗣𝗿𝗼𝗳𝗶𝘀𝘀𝗶𝗼𝗻𝗮𝗶𝘀 𝗧𝗜
 
-## 1. 📌 Descrição
+## 1. 📌 📌 Problema
 
-Este projeto apresenta um pipeline de dados de ponta a ponta, desenvolvido no Azure Databricks, para processamento e disponibilização de dados de salários de profissionais de TI para consumo analítico.
+Os dados brutos de salários de profissionais de TI apresentam informações em diferentes formatos e códigos, dificultando o consumo analítico e a interpretação dos dados. Era necessário padronizar essas informações para disponibilizá-las de forma adequada à análise e responder perguntas de negócio.
+Entre os tratamentos realizados estão a padronização dos nomes das colunas para o contexto de negócio e a transformação de categorias codificadas, como **EN → Júnior, MI → Pleno, SE → Sênior e EX → Executivo.**
 
-O pipeline realiza a ingestão, transformação e padronização dos dados com base na arquitetura Medallion.
-
-O dataset contém informações sobre salários de profissionais de TI em diferentes países, níveis de experiência, modalidades de trabalho, tipos de contrato e tamanhos de empresa.
+## 2.💡 Solução
+Para solucionar esse problema, foi desenvolvido um pipeline de dados no Azure Databricks utilizando Arquitetura Medallion, organizando o processamento nas camadas RAW, Bronze, Silver e Gold. Os dados foram tratados e padronizados ao longo do pipeline e disponibilizados na camada Gold para consumo analítico e resposta às perguntas de negócio.
 
 ---
 
-## 2. 📊 Data Profiling
+## 3. 📊 Data Profiling
 
 Durante o **Data Profiling**, foram identificadas as principais características da fonte:
 
@@ -22,7 +22,7 @@ Durante o **Data Profiling**, foram identificadas as principais características
 
 ---
 
-## 3. 🏗️ Arquitetura Medallion, Infraestrutura e Segurança
+## 4. 🏗️ Arquitetura Medallion, Infraestrutura e Segurança
 
 ![Arquitetura Medallion](arquitetura/Arquitetura.png)
 
@@ -30,7 +30,7 @@ O armazenamento físico dos dados é realizado no ADLS Gen2, enquanto o Unity Ca
 
 ---
 
-## 4. 🛠️ Transformações
+## 5. 🛠️ Transformações
 
 ### Tratamento de valores nulos
 
@@ -86,7 +86,7 @@ Após o tratamento dos valores nulos, as colunas foram padronizadas para o conte
 
 ---
 
-## 5. 📈 Análises de Negócio
+## 6. 📈 Análises de Negócio
 
 ### 1️⃣ Qual o nível de experiência mais comum na base?
 
@@ -112,7 +112,7 @@ As consultas SQL utilizadas para responder às cinco perguntas estão disponíve
 
 ---
 
-## 6. 🧱 Tecnologias utilizadas
+## 7. 🧱 Tecnologias utilizadas
 
 - Microsoft Azure
 - Azure Databricks
@@ -126,7 +126,7 @@ As consultas SQL utilizadas para responder às cinco perguntas estão disponíve
 
 ---
 
-## 7. 👤 Autor
+## 8. 👤 Autor
 
 **Genivon Silva**  
 **Engenheiro de Dados**

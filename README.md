@@ -2,11 +2,13 @@
 
 ## 1. 📌 Problema
 
-Os dados brutos de salários de profissionais de TI apresentam informações em diferentes formatos e códigos, dificultando o consumo analítico e a interpretação dos dados. Era necessário padronizar essas informações para disponibilizá-las de forma adequada à análise e responder perguntas de negócio.
+Os dados brutos de salários de profissionais de TI apresentam informações em diferentes formatos e códigos, dificultando o consumo analítico e a interpretação dos dados. 
+Era necessário padronizar essas informações para disponibilizá-las de forma adequada à análise e responder **cinco perguntas de negócios**.
 Entre os tratamentos realizados estão a padronização dos nomes das colunas para o contexto de negócio e a transformação de categorias codificadas, como **EN → Júnior, MI → Pleno, SE → Sênior e EX → Executivo.**
 
 ## 2.💡 Solução
-Para solucionar esse problema, foi desenvolvido um pipeline de dados no Azure Databricks utilizando Arquitetura Medallion, organizando o processamento nas camadas RAW, Bronze, Silver e Gold. Os dados foram tratados e padronizados ao longo do pipeline e disponibilizados na camada Gold para consumo analítico e resposta às perguntas de negócio.
+Para solucionar esse problema, foi desenvolvido um pipeline de dados no Azure Databricks utilizando Arquitetura Medallion, organizando o processamento nas camadas **RAW, Bronze, Silver e Gold**.
+Os dados foram tratados e padronizados ao longo do pipeline e disponibilizados na camada Gold para consumo analítico e resposta à cinco perguntas de negócios.
 
 ---
 
@@ -26,7 +28,7 @@ Durante o **Data Profiling**, foram identificadas as principais características
 
 ![Arquitetura Medallion](arquitetura/Arquitetura.png)
 
-O armazenamento físico dos dados é realizado no ADLS Gen2, enquanto o Unity Catalog fornece a organização lógica, governança e controle de acesso às tabelas.
+O armazenamento físico dos dados é realizado no ADLS(Azure Data Lake Storage)Gen2, enquanto o Unity Catalog fornece a organização lógica, governança e controle de acesso às tabelas.
 
 ---
 
@@ -34,7 +36,7 @@ O armazenamento físico dos dados é realizado no ADLS Gen2, enquanto o Unity Ca
 
 ### Tratamento de valores nulos
 
-Durante o processamento da camada Silver, foram removidos os **10 registros que apresentavam valor nulo na coluna `work_year`**.
+Durante o processamento da camada Silver, foram removidos **10 registros que apresentavam valor nulo na coluna `work_year`**.
 
 Com isso, a base passou de **133.349 para 133.339 registros**.
 
@@ -86,7 +88,7 @@ Após o tratamento dos valores nulos, as colunas foram padronizadas para o conte
 
 ---
 
-## 6. 📈 Análises de Negócio
+## 6. 📈 Análises de Negócio - 5 Perguntas extraídas da camada de consumo análitico GOLD.
 
 ### 1️⃣ Qual o nível de experiência mais comum na base?
 

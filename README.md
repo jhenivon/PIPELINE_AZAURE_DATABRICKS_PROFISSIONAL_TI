@@ -45,7 +45,7 @@ Com isso, a base passou de **133.349 para 133.339 registros**.
 
 ### Padronização das colunas
 
-Após o tratamento dos valores nulos, as **colunas foram padronizadas** para o **contexto de negócio*:
+Após o tratamento dos valores nulos, as **colunas foram padronizadas** para o **contexto de negócio**:
 
 | Coluna original | Coluna padronizada |
 |---|---|
